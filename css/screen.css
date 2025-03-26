@@ -1,0 +1,184 @@
+@font-face 
+{
+    font-family: 'pixelFont';
+    src: url('../assets/fonts/pixelFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    font-family: 'pixelFont', Arial, sans-serif;
+    background-color: #e6ccff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#gameTitle 
+{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#storyText 
+{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    color: #34495e;
+}
+
+#buttonContainer 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button 
+{
+    font-family: 'pixelFont', Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #901aff;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+button:hover 
+{
+    background-color: #4f0099;
+}
+
+button:active 
+{
+    background-color: #4f0099;
+}
+
+#score 
+{
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+
+#feedbackTitle
+{
+    font-size: 2.5em;
+}
+
+#menuInfo, #feedbackText 
+{
+    margin: 3vw 10vw 3vw 10vw;
+    font-size: 1.5em;
+}
+
+#replayContainer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#storyImage
+{
+    width: 40em;
+    height: auto;
+    border: 5px solid #4f0099;
+    border-radius: 10px;
+}
+
+#titleImage
+{
+    width: 60em;
+    height: auto;
+}
+
+#titleImageGame
+{
+    width: 30em;
+    height: auto;
+}
+
+.center
+{
+    text-align: center;
+    align-items: center;
+}
+
+/* Mobile CSS */
+
+@media (max-width: 768px) 
+{
+    #gameTitle 
+    {
+        font-size: 2em;
+    }
+
+    #storyText 
+    {
+        font-size: 1.2em;
+    }
+
+    button 
+    {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+
+        #storyImage
+    {
+        width: 20em;
+        height: auto;
+    }
+
+        #titleImage
+    {
+        margin: 0;
+        padding-top: 1em;
+        width: 20em;
+        height: auto;
+    }
+
+    #buttonContainer
+    {
+        margin-top: -1em;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    #gameTitle 
+    {
+        font-size: 1.8em;
+    }
+
+    #storyText 
+    {
+        font-size: 1em;
+    }
+
+    button 
+    {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}

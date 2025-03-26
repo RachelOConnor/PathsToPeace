@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =  device-width, initial-scale = 1.0">
+    <title>Paths to Peace</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon-96x96.png" sizes="96x96">
+    
+
+    <link rel="stylesheet" href="css/screen.css">
+
+</head>
+
+<body>
+
+    <!-- <h1 id="gameTitle">Paths to Peace</h1> -->
+
+    <div class="center">
+        <img id="titleImage" src="assets/imgs/title.png" alt="Paths to Peace">
+    </div>
+
+    <div class="center">
+        <img id="storyImage" src="assets/imgs/dogScenario.png" alt="scenario image">
+    </div>
+
+    <p id="storyText"></p>
+
+    <div id="buttonContainer">
+        <button id="option1" onclick="makeChoice(1)"></button>
+        <button id="option2" onclick="makeChoice(2)"></button>
+        <button id="option3" onclick="makeChoice(3)"></button>
+    </div>
+
+    <div id="feedbackContainer" style="display: none;">
+        <h2 id="feedbackTitle"></h2>
+        <p id="feedbackText"></p>
+        <button id="nextButton" onclick="goToNextScene()">Next</button>
+    </div>
+
+    <div id="replayContainer">
+        <button id="replayButton" style="display:none;" onclick="replayGame()">Replay</button>
+    </div>
+
+    <!-- <div id="score"></div> -->
+
+    <script src="js/script.js"></script>
+
+</body>
